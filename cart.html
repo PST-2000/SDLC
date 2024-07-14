@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>State Transition Diagram</title>
+</head>
+<style>
+    body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.diagram-container {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.state {
+    fill: #007bff;
+    stroke: #000;
+    stroke-width: 2;
+}
+
+.state-text {
+    font-size: 14px;
+    fill: #000;
+}
+
+.transition {
+    stroke: #000;
+    stroke-width: 2;
+}
+
+.transition-text {
+    font-size: 12px;
+    fill: #000;
+}
+
+.arrow {
+    fill: #000;
+}
+</style>
+<body>
+    <div class="diagram-container">
+        <svg width="600" height="400">
+            <!-- States -->
+            <circle cx="100" cy="50" r="30" class="state" id="browse"></circle>
+            <text x="75" y="55" class="state-text">Browsing</text>
+
+            <circle cx="100" cy="200" r="30" class="state" id="item-added"></circle>
+            <text x="55" y="205" class="state-text">Item Added</text>
+
+            <circle cx="300" cy="200" r="30" class="state" id="checkout"></circle>
+            <text x="265" y="205" class="state-text">Checkout</text>
+
+            <circle cx="500" cy="200" r="30" class="state" id="payment"></circle>
+            <text x="475" y="205" class="state-text">Payment</text>
+
+            <circle cx="500" cy="50" r="30" class="state" id="confirmation"></circle>
+            <text x="455" y="55" class="state-text">Confirmation</text>
+
+            <!-- Transitions -->
+            <line x1="100" y1="80" x2="100" y2="170" class="transition"></line>
+            <text x="110" y="125" class="transition-text">Add to Cart</text>
+
+            <line x1="130" y1="200" x2="270" y2="200" class="transition"></line>
+            <text x="200" y="190" class="transition-text">Proceed to Checkout</text>
+
+            <line x1="330" y1="200" x2="470" y2="200" class="transition"></line>
+            <text x="400" y="190" class="transition-text">Make Payment</text>
+
+            <line x1="500" y1="80" x2="500" y2="170" class="transition"></line>
+            <text x="510" y="125" class="transition-text">Confirm Order</text>
+
+            <line x1="470" y1="50" x2="130" y2="50" class="transition"></line>
+            <text x="300" y="40" class="transition-text">Return to Browsing</text>
+        </svg>
+    </div>
+</body>
+</html>
