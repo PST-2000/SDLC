@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Journax</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="shortcut icon" href="/mohammad_kaif_ft35_102/unit-3/sprint-4/evaluation/Q1/Q1/android-chrome-192x192.png"
+        type="image/x-icon">
+    <style>
+        /* @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap'); */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            height: 51px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: -9px;
+           
+        }
+       
+
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 600,
+                'GRAD' 0,
+                'opsz' 40;
+            width: 200px;
+        }
+
+        button {
+            background-color: #f5f5f5;
+            border: 1px solid #0000004a;
+
+            padding: 4px 20px;
+            font-size: 16px;
+            font-weight: 600;
+            height: 50px;
+        }
+
+        .containernav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+        }
+
+        .containernav>span {
+            font-size: 13px;
+            font-weight: lighter;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            padding: 0px 25px;
+
+        }
+
+        .cont1 {
+            max-width: 1229px;
+            /* background-color: yellow; */
+            height: 70vh;
+            display: flex;
+            margin: auto;
+            margin-top: 40px;
+            justify-content: space-between;
+        }
+
+        .cont1 .left {
+            width: 30%;
+            height: 90%;
+            display: flex;
+            flex-direction: column;
+            /* background-color: green; */
+        }
+
+        .cont1 .left button {
+            display: inline-block;
+            border-radius: 25px;
+            width: 100px;
+            height: 40px;
+            border: 1px solid black;
+            font-size: 10px;
+            padding: 5px 0px;
+            /* padding: 0px; */
+            background-color: white;
+            border: 1px solid rgba(173, 216, 230, 0.589);
+            font-weight: lighter;
+        }
+
+        .cont1 .left h2 {
+            margin-top: 16px;
+            font-size: 2rem;
+            font-weight: 400;
+            line-height: 2.5rem;
+            max-width: 20rem;
+        }
+
+        .cont1 .left p:nth-of-type(1) {
+            margin-top: 140px;
+            font-weight: 100;
+            font-size: 17px;
+            /* margin-bottom: 1rem; */
+            color: rgb(96, 92, 92);
+            /* text-align: left; */
+            text-align: left;
+            padding-right: 30px;
+        }
+
+        .cont1 .left p:nth-of-type(2) {
+            margin-bottom: 1rem;
+        }
+
+        .cont1 .left p:nth-of-type(2)>span {
+            margin-right: 20px;
+            font-size: 13px;
+            color: rgb(96, 92, 92);
+        }
+
+        .left_bttom {
+            width: 350px;
+            text-align: left;
+            align-items: start;
+            margin-right: 100px;
+            line-height: normal;
+        }
+
+        .cont1 .right {
+            width: 80%;
+            height: 100%;
+            /* background-color: pink; */
+        }
+
+        .cont1 .right img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .cont2 {
+            margin: auto;
+            width: 80vw;
+            height: 65vh;
+            display: flex;
+            margin-top: 2rem;
+            justify-content: space-between;
+        }
+
+        .cont2>div {
+            width: 30%;
+            height: 20rem;
+        }
+
+        .cont2>div p:nth-of-type(3) {
+            font-size: 11px;
+            color: rgb(96, 92, 92);
+        }
+
+        .cont2>div p:nth-of-type(2) {
+            font-size: 13px;
+            font-weight: 100;
+            color: rgb(96, 92, 92);
+            ;
+        }
+
+        .cont2>div p {
+            margin-top: 10px;
+        }
+
+        .cont2>div img {
+            width: 100%;
+            height: 80%;
+        }
+
+        body>hr:nth-of-type(3) {
+            width: 80%;
+            margin: auto;
+        }
+
+        .cont3 {
+            width: 80vw;
+            /* background-color: yellow; */
+            /* height: 70vh; */
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            margin-top: 1rem;
+        }
+
+        .cont3 .cards {
+            display: flex;
+            justify-content: space-between;
+            /* gap: 1rem; */
+        }
+
+        .cont3 h2 {
+            font-size: 2rem;
+            font-weight: 400;
+            margin-bottom: 2rem;
+        }
+
+        .cont3 .cards .card {
+            /* margin-right: 1rem; */
+            width: 23%;
+        }
+
+        .cont3 .cards .card+.card {
+            /* margin-left: 1rem; */
+            width: 23%;
+        }
+
+        .cont3 .cards .card p:nth-of-type(1) {
+            font-weight: 100;
+            color: rgb(26, 24, 24);
+        }
+
+        .cont3 .cards .card p:nth-of-type(2) {
+            font-size: 12px;
+            margin-top: 10px;
+            color: rgb(96, 92, 92);
+            ;
+        }
+
+        .cont3 .cards .card img {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .cont3 .cards .card:nth-of-type(2) img,
+        .cont3 .cards .card:nth-of-type(4) img {
+            height: 15rem;
+        }
+
+        .cont4 {
+            width: 100vw;
+            margin: 0px;
+            margin-top: 2rem;
+            position: relative;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .cont4 img {
+         
+            width: 100%;
+            height: 100vh;
+            
+        }
+
+        .cont4>div p:nth-of-type(2) {
+            font-size: 12px;
+            color: rgb(96, 92, 92);
+        }
+
+        .cont4>div p:nth-of-type(1) {
+            font-size: 16px;
+            margin-bottom: 2rem;
+            line-height: 1.4;
+            color: rgb(96, 92, 92);
+            ;
+        }
+
+        .cont4>div h1 {
+            font-size: 2rem;
+            font-weight: 400;
+            margin-bottom: 1rem;
+        }
+
+        .cont4>div {
+            top: 10rem;
+            right: 10rem;
+            width: 30rem;
+            /* height: 15rem; */
+            position: absolute;
+            background-color: white;
+            margin: auto;
+            padding: 4rem 2rem;
+        }
+
+        .cont4>div:hover {
+            cursor: pointer;
+            background-color: lightblue;
+        }
+
+        body>hr:nth-of-type(4) {
+            width: 80vw;
+            margin: auto;
+            margin-top: 3rem;
+        }
+
+        .cont5 {
+            display: flex;
+            flex-direction: column;
+            width: 80vw;
+            /* height: 80vh; */
+            margin: auto;
+        }
+
+        .cont5>h1 {
+            font-weight: 300;
+            margin-bottom: 1rem;
+            margin-top: 10px;
+        }
+
+        .cont5>.innercont {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            height: 100%;
+            /* background-color: yellow; */
+        }
+
+        .cont5>.innercont>.left>div p:nth-of-type(1) {
+            max-width: 65%;
+            border-right: 1px solid gray;
+            padding-right: 10px;
+        }
+
+        .cont5>.innercont>.left>div>div p:nth-of-type(1) {
+            border: 0px;
+            font-size: 14px;
+        }
+
+        .cont5>.innercont .left p {
+            font-size: 1rem;
+            color: rgb(96, 92, 92);
+            ;
+        }
+
+        /* .cont5 > .innercont .left p:nth-of-type(2){
+    margin-left: 1rem;
+} */
+        .cont5>.innercont .left h1 {
+            font-size: 1.8rem;
+            font-weight: 200;
+            margin-top: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .cont5>.innercont .left {
+            /* background-color: green; */
+            height: 100%;
+            width: 55%;
+        }
+
+        .cont5>.innercont .left>div {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: auto;
+        }
+
+        .cont5>.innercont .left>div>div {
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            /* border-left: 1px solid gray; */
+            /* padding-left: 10px; */
+            /* background-color: yellow; */
+            /* height: 100%; */
+        }
+
+        .cont5>.innercont .left>div>div>img {
+            width: 3rem;
+            height: 3rem;
+            border-radius: 100%;
+            margin-right: 10px;
+        }
+
+        .cont5>.innercont>.left>img:nth-of-type(1) {
+            width: 100%;
+            height: 80%;
+        }
+
+        .cont5>.innercont .right {
+            width: 40%;
+            height: 100%;
+        }
+
+        .cont5>.innercont .right>p:nth-of-type(1) {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        .cont5>.innercont .right>p:nth-of-type(4) {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        .cont5>.innercont .right>p:nth-of-type(5) {
+            font-size: 12px;
+            margin-top: 10px;
+            color: rgb(96, 92, 92);
+            ;
+            margin-bottom: 1rem;
+        }
+
+        .cont5>.innercont .right>p:nth-of-type(6) {
+            font-size: 1rem;
+            margin-top: 1rem;
+        }
+
+        .cont5>.innercont .right>p:nth-of-type(2) {
+            font-size: 15px;
+            color: rgb(96, 92, 92);
+            ;
+            line-height: 1.5;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .cont5>.innercont .right>p:nth-of-type(3) {
+            font-size: 12px;
+            margin-top: 10px;
+            color: rgb(96, 92, 92);
+            margin-bottom: 1rem;
+        }
+
+        .cont5>.innercont .right>img {
+            width: 100%;
+            height: 40%;
+        }
+
+        .cont6 {
+            margin-top: 5rem;
+        }
+
+        .cont6>div:nth-of-type(1) {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .cont6>.cards>.card:nth-of-type(2) img,
+        .cont6>.cards>.card:nth-of-type(4) img,
+        .cont6>.cards>.card:nth-of-type(1) img,
+        .cont6>.cards>.card:nth-of-type(3) img {
+            height: 20rem;
+        }
+
+        .cont7 {
+            width: 80vw;
+            height: 400px;
+            margin: auto;
+            margin-top: 3rem;
+            display: flex;
+            justify-content: space-between;
+            
+            /* height: 80%; */
+        }
+
+        .cont7 .left {
+            width: 50%;
+            height: 250px;
+            background-color: lightblue;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            border-radius: 7px;
+           
+        }
+
+        .cont7 .left>p:nth-of-type(1) {
+            font-size: 13px;
+            color: rgb(96, 92, 92);
+            ;
+            margin-bottom: 1rem;
+        }
+
+        .cont7 .left>p:nth-of-type(3) {
+            /* margin-top: 6rem; */
+            color: rgb(96, 92, 92);
+            ;
+        }
+
+        .cont7 .left>p:nth-of-type(2) {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+
+        .cont7 .left>div {
+            margin-top: auto;
+        }
+
+        .cont7 .left>div>input {
+            width: 50%;
+            height: 2rem;
+            background-color: lightblue;
+            outline: none;
+            border: 1px solid black;
+            border-radius: 2px;
+            padding-left: 1rem;
+            padding: 10px 20px;
+           
+        }
+
+        .cont7 .left>div>button {
+            background-color: black;
+            padding: 10px 20px;
+            color: white;
+            border: none;
+            height: 54px;
+            border-radius: 2px;
+        }
+
+        .cont7 .right {
+            width: 40%;
+            height: 314px;
+            background-color: wheat;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            border-radius: 7px;
+        }
+
+        .cont7 .right img {
+            height: 90%;
+            width: 60%;
+
+        }
+
+    footer {
+    background-color: #000000;
+    padding: 40px 20px;
+    height: 300px;
+}
+
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+
+.footer-column {
+    flex: 1;
+    margin: 20px;
+}
+
+
+.footer-column h3 {
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #87CEEB;
+}
+
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+
+.social-icons a {
+    margin-right: 15px;
+}
+
+
+.social-icons img {
+    height: 25px;
+}
+
+
+.footer-column p a {
+    color: #87CEEB;
+    text-decoration: none;
+}
+
+
+.footer-column p a:hover {
+    text-decoration: underline;
+}
+
+
+.footer-column button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+
+.footer-column button:hover {
+    background-color: #0056b3;
+}
+
+
+.footer-bottom {
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+    /* margin-top: 10px; */
+    justify-content: space-between;
+    display: flex;
+}
+
+
+.footer-bottom p {
+    margin: 0;
+    color: #666;
+ 
+}
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <span class="material-symbols-outlined">
+                    menu</span>
+            </div>
+            <div class="journax">
+                <img src="https://cdn.prod.website-files.com/660fedec1ab54b2595c51e30/667bbce8583d2f62be7e587c_brand.svg" alt="">
+            </div>
+            <button>Subscribe</button>
+        </div>
+        <hr>
+
+        <nav>
+            <div class="containernav">
+                <span>Health</span>
+                <span>Politics</span>
+                <span>Sports</span>
+                <span>World News</span>
+                <span>Business</span>
+                <span>Technology</span>
+                <span>Cart[0]</span>
+            </div>
+        </nav>
+        <hr>
+    </header>
+
+
+    <div class="cont1">
+        <div class="left">
+            <button>World News</button>
+            <h2>Unveiling the stories & significance of historic landmarks</h2>
+            <p>
+                Discover the rich heritage, architectural marvels, and pivotal events
+                that have shaped these iconic sites. Through our in-depth coverage,
+                gain a deeper appreciation for the legacy.
+            </p>
+            <p><span>Marvin McKinney</span> <span>- &nbsp;June 29, 2024</span></p>
+            <div>
+                <hr class="left_bttom">
+            </div>
+        </div>
+        <div class="right">
+            <img src="https://cdn.prod.website-files.com/667bd81876339d31af9381fa/667eb0b7962fe6b39d24c427_news-main-13.jpg"
+                alt="" />
+        </div>
+    </div>
+    <div class="cont2">
+        <div>
+            <img src="https://cdn.prod.website-files.com/667bd81876339d31af9381fa/667eb0e29ed33b549f7d769c_news-thumb-14-p-500.jpg"
+                alt="" />
+            <p>The rise of next-gen sports stars</p>
+            <p>
+                From breakthrough performances to inspiring stories, we spotlight the
+                next generation of athletes making waves in the sports world.
+            </p>
+            <p>Leselie Alexander</p>
+        </div>
+        <div>
+            <img src="https://cdn.prod.website-files.com/667bd81876339d31af9381fa/667eb1252d8c203c005b88fe_news-thumb-15-p-500.jpg"
+                alt="" />
+            <p>The rise of next-gen sports stars</p>
+            <p>
+                Explore the latest innovations shaping the future of electric vehicles.
+                From cutting-edge battery technologies to advancements in autonomous driving.
+            </p>
+            <p>Wade Warren</p>
+        </div>
+        <div>
+            <img src="https://cdn.prod.website-files.com/667bd81876339d31af9381fa/667eb15df0b53dd34be6a682_news-thumb-16-p-500.jpg"
+                alt="" />
+            <p>The rise of next-gen sports stars</p>
+            <p>
+                Acquired an AI startup for $2 billion, aiming to enhance its technological
+                capabilities and expand its influence in the artificial intelligence sector.
+            </p>
+            <p>Theresa Web</p>
+        </div>
+    </div>
+    <hr />
+    <div class="cont3">
+        <h2>* Editor’s Choice</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="https://cdn.prod.website-files.com/667bd81876339d31af9381fa/667fa6660746e795774eb436_editor-news-01.jpg"
+                    alt="" />
+                <p>International community expresses hope for resolution</p>
+                <p>World News</p>
+            </div>
+            <div class="card">
+                <img src="https://cdn.prod.website-files.com/667bd81876339d31af9381fa/667fa71e7dde9e3d024847d7_editor-news-02.jpg"
+                    alt="" />
+                <p>Season's most dramatic races
+                </p>
+                <p>Sports</p>
+            </div>
+            <div class="card">
+                <img src="https://cdn.prod.website-files.com/667bd81876339d31af9381fa/667fa762dba43638cc6ed29d_editor-news-03.jpg"
+                    alt="" />
+                <p>Innovations driving the future of transportation</p>
+                <p>Technology</p>
+            </div>
+            <div class="card">
+                <img src="https://cdn.prod.website-files.com/667bd81876339d31af9381fa/667fa7b9c213d85ea6857b50_editor-news-04.jpg"
+                    alt="" />
+                <p>Supply chain disruptions challenges and solutions for businesses worldwide</p>
+                <p>Business</p>
+            </div>
+        </div>
+    </div>
+    <div class="cont4">
+        <img src="/mohammad_kaif_ft35_102/unit-3/sprint-4/evaluation/Q1/Q1/5.jpg" alt="" />
+        <div>
+            <h1>Advancements in electric vehicle technology</h1>
+            <p>
+                Explore the latest innovations shaping the future of electric
+                vehicles. From cutting-edge battery technologies to advancements in
+                autonomous driving.
+            </p>
+            <p><span>June 29, 2024 &nbsp;</span> <span>- &nbsp;Wade Warren </span></p>
+        </div>
+    </div>
+    <hr />
+    <div class="cont5">
+        <h1>* World News</h1>
+        <div class="innercont">
+            <div class="left">
+                <img src="6.jpg" alt="" />
+                <h1>
+                    UN report highlights growing threat of food insecurity in developing
+                    nations
+                </h1>
+                <div>
+                    <p>
+                        A recent United Nations report has brought attention to the
+                        escalating issue of food insecurity in developing nations. The
+                        report highlights how economic instability, climate change, and
+                        ongoing conflicts are exacerbating hunger and malnutrition,
+                        putting millions at risk.
+                    </p>
+                    <div>
+                        <img src="7.jpg" alt="" />
+                        <p>Leslie Alexander Editorialist</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <img src="8.jpg" alt="" />
+                <p>
+                    Global leaders convene to discuss new trade agreements, aim to
+                    strengthen economic cooperation
+                </p>
+                <p>
+                    By forging stronger economic ties, the participating nations hope to
+                    stimulate trade, create jobs, and promote sustainable development in
+                    an increasingly interconnected world.
+                </p>
+                <p>June 28, 2024 &nbsp; - &nbsp; Guy Hawkins</p>
+                <hr />
+                <p>
+                    Global leaders convene to discuss new trade agreements, aim to
+                    strengthen economic cooperation
+                </p>
+                <p>June 28, 2024 &nbsp; - &nbsp; Guy Hawkins</p>
+                <hr />
+                <p>Us presidential administration Biden's first year in office</p>
+            </div>
+        </div>
+    </div>
+    <div class="cont3 cont6">
+        <div>
+            <h1>* Staff Writers</h1>
+            <p>View All</p>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <img src="https://cdn.prod.website-files.com/667bd81876339d31af9381fa/667d0511259c918e72509691_author-main-01-p-500.jpg"
+                    alt="" />
+                <p>Theressa Web</p>
+                <p>Senior Reporter</p>
+            </div>
+            <div class="card">
+                <img src="https://cdn.prod.website-files.com/667bd81876339d31af9381fa/667d0539f5cd6d3a8e8f15a0_author-main-02-p-500.jpg"
+                    alt="" />
+                <p>Marvin McKinney</p>
+                <p>Publisher</p>
+            </div>
+            <div class="card">
+                <img src="https://cdn.prod.website-files.com/667bd81876339d31af9381fa/667d056c783d376b3fe21bb7_author-main-03-p-500.jpg"
+                    alt="" />
+                <p>Wade Warren</p>
+                <p>content Writer</p>
+            </div>
+            <div class="card">
+                <img src="https://cdn.prod.website-files.com/667bd81876339d31af9381fa/667d058ec1e876bede9c10b2_author-main-04-p-500.jpg"
+                    alt="" />
+                <p>Leslie Alexander</p>
+                <p>Editorialist</p>
+            </div>
+        </div>
+    </div>
+    <div class="cont7">
+        <div class="left">
+            <p>Subscribe Our Newsletter</p>
+            <p>Empower yourself subscribe to our expert analysis and insights</p>
+            <p>
+                From breaking news to thought-provoking opinion pieces, our newsletter
+                keeps you informed.
+            </p>
+            <div>
+                <input type="text" placeholder="Enter your e-mail..." />
+                <button>Subscribe Now</button>
+            </div>
+        </div>
+        <div class="right">
+            <img src="https://cdn.prod.website-files.com/660fedec1ab54b2595c51e30/667d0971bf5cc7d1c3d3ff9c_cta-mobile.png"
+                alt="" />
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Pages</h3>
+                <ul>
+                    <li><a>About us</a></li>
+                    <li><a>News</a></li>
+                    <li><a>Authors</a></li>
+                    <li><a>Newsletter Plans</a></li>
+                    <li><a>Contact us</a></li>
+                    <li><a>Sign Up</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Category</h3>
+                <ul>
+                    <li><a>Health</a></li>
+                    <li><a>Politics</a></li>
+                    <li><a>Sports</a></li>
+                    <li><a>World News</a></li>
+                    <li><a>Business</a></li>
+                    <li><a>Technology</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a>Privacy Policy</a></li>
+                    <li><a>Advertise</a></li>
+                    <li><a>Terms & Conditions</a></li>
+                    <li><a>License</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <div class="social-icons">
+                    <a><img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE4LjgyNjYgMjIuMzg0N0wxNC4yNzQ0IDI3LjQ5OThIMTMuMDA0NUwxOC4zNTUzIDIxLjQ4NTZMMTguNjMxOSAyMS4xNzQ4TDE4LjM3NjUgMjAuODQ2M0wxMi41NzY5IDEzLjM4ODdIMTYuNjg3NUwyMC4yNTEzIDE4LjAyMjFMMjAuNjE5NyAxOC41MDFMMjEuMDIxMiAxOC4wNDk2TDI1LjE2NzYgMTMuMzg4N0gyNi40MzU4TDIxLjQ4MTQgMTguOTU3MkwyMS4yMDYzIDE5LjI2NjRMMjEuNDU4NiAxOS41OTQ0TDI3LjUzOTMgMjcuNDk5OEgyMy41NTM0TDE5LjU5NDggMjIuNDEwMUwxOS4yMjU5IDIxLjkzNTlMMTguODI2NiAyMi4zODQ3Wk0yMy42MzM2IDI2Ljc3MjRMMjMuNzgzOCAyNi45NjU0SDI0LjAyODNIMjUuNDcyN0gyNi40ODgxTDI1Ljg2OTEgMjYuMTYwNkwxNi41NDUyIDE0LjAzNzZMMTYuMzk1MSAxMy44NDI0SDE2LjE0ODlIMTQuNTk4OEgxMy41NzY1TDE0LjIwNDEgMTQuNjQ5NEwyMy42MzM2IDI2Ljc3MjRaIiBmaWxsPSJ3aGl0ZSIgc3Ryb2tlPSJ3aGl0ZSIvPgo8L3N2Zz4K" alt="X"></a>
+                    <a><img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTIwLjQ0MzkgMTguMjk2OUgyNC40NDM5TDIzLjk5OTUgMjAuMDc0N0gyMC40NDM5VjI4LjA3NDdIMTguNjY2MlYyMC4wNzQ3SDE1LjExMDZWMTguMjk2OUgxOC42NjYyVjE2LjYzMjlDMTguNjY2MiAxNS4wNDggMTguODMxNSAxNC40NzI5IDE5LjE0MDggMTMuODkzNEMxOS40NDM5IDEzLjMyMDggMTkuOTEyMiAxMi44NTI1IDIwLjQ4NDggMTIuNTQ5NEMyMS4wNjQ0IDEyLjI0IDIxLjYzOTUgMTIuMDc0NyAyMy4yMjQ0IDEyLjA3NDdDMjMuNjg4NCAxMi4wNzQ3IDI0LjA5NTUgMTIuMTE5MiAyNC40NDM5IDEyLjIwOFYxMy44NTI1SDIzLjIyNDRDMjIuMDQ3NSAxMy44NTI1IDIxLjY4OTMgMTMuOTIxOCAyMS4zMjM5IDE0LjExNzRDMjEuMDUzNyAxNC4yNjE0IDIwLjg1MjggMTQuNDYyMyAyMC43MDg4IDE0LjczMjVDMjAuNTEzMyAxNS4wOTc4IDIwLjQ0MzkgMTUuNDU2IDIwLjQ0MzkgMTYuNjMyOVYxOC4yOTY5WiIgZmlsbD0id2hpdGUiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iMC44Ii8+Cjwvc3ZnPgo=" alt="Facebook"></a>
+                    <a><img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTI2LjQzOTUgMTUuNzMzOUwyNi40Mzk1IDE1LjczNEwyNi40NDYzIDE1Ljc0MDlDMjYuNTgwNCAxNS44NzY0IDI2LjcwMzMgMTYuMTQ4MSAyNi43OTM0IDE2LjQ1NDdDMjYuODM1MSAxNi41OTY0IDI2Ljg2NDQgMTYuNzI2NCAyNi44ODMyIDE2LjgyMDlDMjYuODkyNSAxNi44Njc5IDI2Ljg5OTIgMTYuOTA1NCAyNi45MDMzIDE2LjkzMDRMMjYuOTA3OCAxNi45NTc4TDI2LjkwODEgMTYuOTYwNEwyNi45MDg5IDE2Ljk2NjhMMjYuOTEzNCAxNy4wMDU5QzI2LjkxNzQgMTcuMDQwNCAyNi45MjMxIDE3LjA5MTcgMjYuOTMgMTcuMTU3M0MyNi45NDM4IDE3LjI4ODUgMjYuOTYyMiAxNy40NzY2IDI2Ljk4MDYgMTcuNzAyNUMyNy4wMTc2IDE4LjE1NTYgMjcuMDU0MiAxOC43NTQ5IDI3LjA1NDIgMTkuMzQ5NVYyMC40OTg4QzI3LjA1NDIgMjEuMDk0OSAyNy4wMTc2IDIxLjY5NDIgMjYuOTgwNiAyMi4xNDY4QzI2Ljk2MjIgMjIuMzcyNSAyNi45NDM4IDIyLjU2MDQgMjYuOTMgMjIuNjkxM0MyNi45MjMxIDIyLjc1NjggMjYuOTE3NCAyMi44MDc5IDI2LjkxMzQgMjIuODQyNEwyNi45MDg5IDIyLjg4MTRMMjYuOTA4MSAyMi44ODc5TDI2LjkwNzggMjIuODkwNEwyNi45MDMzIDIyLjkxNzlDMjYuODk5MiAyMi45NDI4IDI2Ljg5MjUgMjIuOTgwMyAyNi44ODMyIDIzLjAyNzNDMjYuODY0NCAyMy4xMjE5IDI2LjgzNTEgMjMuMjUxOSAyNi43OTM0IDIzLjM5MzZDMjYuNzAzMyAyMy43MDAyIDI2LjU4MDQgMjMuOTcxOCAyNi40NDYzIDI0LjEwNzRMMjYuNDQ2MiAyNC4xMDczTDI2LjQzOTUgMjQuMTE0M0MyNi4wNTM2IDI0LjUxOTYgMjUuNjUzNCAyNC41NjEgMjUuMzM2MiAyNC41OTM4QzI1LjMwMzMgMjQuNTk3MiAyNS4yNzEzIDI0LjYwMDUgMjUuMjQwNCAyNC42MDQxQzI0LjE5OTEgMjQuNjc4MSAyMi44OTMzIDI0LjcxNjkgMjEuODQxMSAyNC43MzcyQzIxLjMxNDEgMjQuNzQ3MyAyMC44NTI5IDI0Ljc1MjggMjAuNTIzNSAyNC43NTU3QzIwLjM1ODggMjQuNzU3MSAyMC4yMjcxIDI0Ljc1OCAyMC4xMzY3IDI0Ljc1ODRMMjAuMDMzMiAyNC43NTg5TDIwLjAwNjUgMjQuNzU4OUwyMC4wMDA0IDI0Ljc1ODlMMTkuOTk5OSAyNC43NTlMMTkuOTkyMSAyNC43NTg5TDE5Ljk1OTIgMjQuNzU4NkwxOS44MzMgMjQuNzU3MkMxOS43MjM1IDI0Ljc1NiAxOS41NjU4IDI0Ljc1NDIgMTkuMzcyNiAyNC43NTE2QzE4Ljk4NjIgMjQuNzQ2NSAxOC40NTg3IDI0LjczODUgMTcuODkzNiAyNC43MjY4QzE2Ljc2ODQgMjQuNzAzNyAxNS41MjE5IDI0LjY2NjcgMTQuOTMgMjQuNjEyMkMxNC44Mzg3IDI0LjU5NTQgMTQuNzQ2MSAyNC41ODMyIDE0LjY1MzEgMjQuNTcxQzE0LjI3NzUgMjQuNTIxNSAxMy44OTQ3IDI0LjQ3MTEgMTMuNTU0OSAyNC4xMTQzTDEzLjU1NDkgMjQuMTE0M0wxMy41NDkyIDI0LjEwODVDMTMuNDE1OSAyMy45NzMgMTMuMjkzNiAyMy43MDEgMTMuMjAzNyAyMy4zOTQxQzEzLjE2MjIgMjMuMjUyMyAxMy4xMzMgMjMuMTIyMiAxMy4xMTQyIDIzLjAyNzZDMTMuMTA0OCAyMi45ODA1IDEzLjA5ODIgMjIuOTQzIDEzLjA5NCAyMi45MThMMTMuMDg5NiAyMi44OTA1TDEzLjA4OTIgMjIuODg3OUwxMy4wODg1IDIyLjg4MTVMMTMuMDgzOSAyMi44NDI0QzEzLjA4IDIyLjgwNzggMTMuMDc0MyAyMi43NTY1IDEzLjA2NzQgMjIuNjkxQzEzLjA1MzYgMjIuNTU5OCAxMy4wMzUyIDIyLjM3MTcgMTMuMDE2NyAyMi4xNDU4QzEyLjk3OTcgMjEuNjkyNiAxMi45NDMxIDIxLjA5MzQgMTIuOTQzMSAyMC40OTg4VjE5LjM0OTVDMTIuOTQzMSAxOC43NTUyIDEyLjk4MDQgMTguMTU2MyAxMy4wMTgxIDE3LjcwMzNDMTMuMDM2OSAxNy40Nzc1IDEzLjA1NTcgMTcuMjg5NSAxMy4wNjk4IDE3LjE1ODNDMTMuMDc2OCAxNy4wOTI4IDEzLjA4MjYgMTcuMDQxNSAxMy4wODY2IDE3LjAwN0wxMy4wOTEzIDE2Ljk2OEwxMy4wOTIyIDE2Ljk2MDJMMTMuMDkyNyAxNi45NTY1TDEzLjA5NzEgMTYuOTI5MUMxMy4xMDEyIDE2LjkwNDEgMTMuMTA3NyAxNi44NjY2IDEzLjExNjkgMTYuODE5N0MxMy4xMzU1IDE2LjcyNTIgMTMuMTY0NCAxNi41OTUyIDEzLjIwNTcgMTYuNDUzNkMxMy4yOTUxIDE2LjE0NzEgMTMuNDE3MyAxNS44NzYgMTMuNTUxMSAxNS43NDA5TDEzLjU1MTEgMTUuNzQwOUwxMy41NTc4IDE1LjczMzlDMTMuOTQzNyAxNS4zMjg3IDE0LjM0NCAxNS4yODczIDE0LjY2MTIgMTUuMjU0NUMxNC42OTQyIDE1LjI1MTEgMTQuNzI2MyAxNS4yNDc4IDE0Ljc1NzMgMTUuMjQ0MkMxNS43OTggMTUuMTY4NyAxNy4xMDI4IDE1LjEzMDYgMTguMTU0MyAxNS4xMTE1QzE4LjY4MDggMTUuMTAxOSAxOS4xNDE1IDE1LjA5NzEgMTkuNDcwNiAxNS4wOTQ3QzE5LjYzNTEgMTUuMDkzNSAxOS43NjY2IDE1LjA5MjkgMTkuODU2OSAxNS4wOTI2TDE5Ljk2MDQgMTUuMDkyM0wxOS45ODY5IDE1LjA5MjNMMTkuOTkzNiAxNS4wOTIzTDE5Ljk5NTIgMTUuMDkyM0wxOS45OTU2IDE1LjA5MjNIMTkuOTk1N0wxOS45OTU3IDE0LjU5MjNWMTUuMDkyM0gyMC4wMDE2VjE0LjU5MjNMMjAuMDAxNiAxNS4wOTIzSDIwLjAwMTdMMjAuMDAyMSAxNS4wOTIzTDIwLjAwMzcgMTUuMDkyM0wyMC4wMTA0IDE1LjA5MjNMMjAuMDM3IDE1LjA5MjNMMjAuMTQwNCAxNS4wOTI2QzIwLjIzMDcgMTUuMDkyOSAyMC4zNjIyIDE1LjA5MzUgMjAuNTI2NyAxNS4wOTQ3QzIwLjg1NTggMTUuMDk3MSAyMS4zMTY2IDE1LjEwMTkgMjEuODQzMSAxNS4xMTE1QzIyLjg5NDYgMTUuMTMwNiAyNC4xOTk0IDE1LjE2ODcgMjUuMjQgMTUuMjQ0MkMyNS4yNzExIDE1LjI0NzggMjUuMzAzMiAxNS4yNTExIDI1LjMzNjEgMTUuMjU0NUMyNS42NTMzIDE1LjI4NzMgMjYuMDUzNiAxNS4zMjg3IDI2LjQzOTUgMTUuNzMzOVpNMTcuOTM3NCAyMS44OTRWMjIuNzE3OEwxOC42NjgyIDIyLjMzNzVMMjIuNzQ5OSAyMC4yMTM3TDIzLjU5OTQgMTkuNzcxNkwyMi43NTEyIDE5LjMyNzJMMTguNjY5NCAxNy4xODg2TDE3LjkzNzQgMTYuODA1VjE3LjYzMTRWMjEuODk0WiIgZmlsbD0id2hpdGUiIHN0cm9rZT0id2hpdGUiLz4KPC9zdmc+Cg==" alt="YouTube"></a>
+                    <a><img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTIzLjc1NDYgMTUuMzkxOEwyMy43NTQ2IDE1LjM5MThDMjMuNjc2NCAxNS40NDQgMjMuNjE1NSAxNS41MTgyIDIzLjU3OTYgMTUuNjA0OUMyMy41NDM3IDE1LjY5MTcgMjMuNTM0MyAxNS43ODczIDIzLjU1MjYgMTUuODc5NUMyMy41NzA5IDE1Ljk3MTYgMjMuNjE2MSAxNi4wNTYyIDIzLjY4MjUgMTYuMTIyNkwyMy43NTQ2IDE1LjM5MThaTTIzLjc1NDYgMTUuMzkxOEMyMy44MzI3IDE1LjMzOTYgMjMuOTI0NSAxNS4zMTE3IDI0LjAxODQgMTUuMzExN0MyNC4xNDQ0IDE1LjMxMTcgMjQuMjY1MiAxNS4zNjE4IDI0LjM1NDMgMTUuNDUwOUMyNC40NDM0IDE1LjUzOTkgMjQuNDkzNCAxNS42NjA3IDI0LjQ5MzQgMTUuNzg2N0MyNC40OTM0IDE1Ljg4MDcgMjQuNDY1NiAxNS45NzI1IDI0LjQxMzQgMTYuMDUwNkwyNC40MTM0IDE2LjA1MDZDMjQuMzYxMSAxNi4xMjg4IDI0LjI4NyAxNi4xODk2IDI0LjIwMDIgMTYuMjI1NkwyNC4yMDAxIDE2LjIyNTZNMjMuNzU0NiAxNS4zOTE4TDI0LjIwMDEgMTYuMjI1Nk0yNC4yMDAxIDE2LjIyNTZDMjQuMTEzNSAxNi4yNjE1IDI0LjAxNzkgMTYuMjcwOSAyMy45MjU3IDE2LjI1MjZNMjQuMjAwMSAxNi4yMjU2TDIzLjkyNTcgMTYuMjUyNk0xOS42ODE2IDE2LjQ1NzRMMTkuNjgwNyAxNi40NTc0QzE4Ljk1NTUgMTYuNDU4OCAxOC4yNDcgMTYuNjc1MSAxNy42NDQ3IDE3LjA3OUMxNy4wNDI0IDE3LjQ4MjkgMTYuNTczNCAxOC4wNTYzIDE2LjI5NjkgMTguNzI2N0wxNi4yOTY5IDE4LjcyNjdDMTYuMDIwMyAxOS4zOTcxIDE1Ljk0ODcgMjAuMTM0NCAxNi4wOTEgMjAuODQ1NUwxNS42MDMxIDIwLjk0MzJMMTYuMDkxIDIwLjg0NTVDMTYuMjMzNCAyMS41NTY1IDE2LjU4MzMgMjIuMjA5NSAxNy4wOTY2IDIyLjcyMTdMMTcuMDk2NiAyMi43MjE3QzE3LjYwOTkgMjMuMjM0MSAxOC4yNjM1IDIzLjU4MjcgMTguOTc0OCAyMy43MjM2TDE4Ljk3NDggMjMuNzIzNkMxOS42ODYyIDIzLjg2NDYgMjAuNDIzMyAyMy43OTE1IDIxLjA5MzIgMjMuNTEzN0MyMS43NjMgMjMuMjM1OSAyMi4zMzU1IDIyLjc2NTcgMjIuNzM4MiAyMi4xNjI3QzIzLjE0MSAyMS41NTk2IDIzLjM1NTkgMjAuODUwNiAyMy4zNTU5IDIwLjEyNTVWMjAuMTI0NUMyMy4zNTY5IDE5LjY0MjEgMjMuMjYyNCAxOS4xNjQyIDIzLjA3OCAxOC43MTg0TDIzLjA3OCAxOC43MTgzQzIyLjg5MzcgMTguMjcyNiAyMi42MjI5IDE3Ljg2NzcgMjIuMjgxNSAxNy41MjY4TDE5LjY4MTYgMTYuNDU3NFpNMTkuNjgxNiAxNi40NTc0QzIwLjE2NDEgMTYuNDU1NSAyMC42NDIxIDE2LjU0OSAyMS4wODgzIDE2LjczMjVDMjEuNTM0NSAxNi45MTYxIDIxLjkzOTkgMTcuMTg2IDIyLjI4MTUgMTcuNTI2OEwxOS42ODE2IDE2LjQ1NzRaTTIzLjkyNTcgMTYuMjUyNkMyMy44MzM2IDE2LjIzNDMgMjMuNzQ5IDE2LjE4OTEgMjMuNjgyNSAxNi4xMjI2TDIzLjkyNTcgMTYuMjUyNlpNMjcuMjU2MSAxNi43ODk3TDI3LjI1NjMgMTYuNzk4TDI3LjI1NjcgMTYuODA2MkMyNy4zMDQ1IDE3LjY1MDggMjcuMzA0NyAxNy45MTI0IDI3LjMwNDcgMjAuMTI1NUMyNy4zMDQ3IDIxLjIyNjMgMjcuMjkyNiAyMS44NDMzIDI3LjI4MDUgMjIuMjkxNkMyNy4yNzc3IDIyLjM5MzYgMjcuMjc1IDIyLjQ4NzggMjcuMjcyMyAyMi41Nzc3QzI3LjI2MzUgMjIuODc4OCAyNy4yNTYgMjMuMTMxIDI3LjI1NTkgMjMuNDY3QzI3LjI0MDggMjQuMDgzOCAyNy4xMjUyIDI0LjY5MzkgMjYuOTEzNCAyNS4yNzM0QzI2LjczNDkgMjUuNzQ2NCAyNi40NTQyIDI2LjE3NDQgMjYuMDkxNCAyNi41MjY4TDI2LjA4NTYgMjYuNTMyM0wyNi4wODAxIDI2LjUzODFDMjUuNzMwNCAyNi45IDI1LjMwMyAyNy4xNzc4IDI0LjgzMDMgMjcuMzUwMUwyNC44MzAzIDI3LjM1MDFMMjQuODI0OCAyNy4zNTIyQzI0LjI0NjQgMjcuNTcwOCAyMy42MzUgMjcuNjg5IDIzLjAxNjggMjcuNzAxOEwyMy4wMDc5IDI3LjcwMkwyMi45OTg5IDI3LjcwMjVDMjIuMTU0NCAyNy43NTAzIDIxLjg5MjcgMjcuNzUwNSAxOS42Nzk3IDI3Ljc1MDVDMTcuNDY2NiAyNy43NTA1IDE3LjIwNSAyNy43NTAzIDE2LjM2MDQgMjcuNzAyNUwxNi4zNTE1IDI3LjcwMkwxNi4zNDI1IDI3LjcwMThDMTUuNzI0NCAyNy42ODkgMTUuMTEzIDI3LjU3MDggMTQuNTM0NiAyNy4zNTIyTDE0LjUzMDkgMjcuMzUwOEMxNC4wNTc4IDI3LjE3NjIgMTMuNjI5NyAyNi44OTggMTMuMjc3OSAyNi41MzY3TDEzLjI3MjYgMjYuNTMxMkwxMy4yNjcxIDI2LjUyNTlDMTIuOTA1MSAyNi4xNzYyIDEyLjYyNzUgMjUuNzQ4OSAxMi40NTUxIDI1LjI3NjFMMTIuNDU1MSAyNS4yNzYxTDEyLjQ1MyAyNS4yNzA2QzEyLjIzNDQgMjQuNjkyMiAxMi4xMTYxIDI0LjA4MDggMTIuMTAzMyAyMy40NjI2TDEyLjEwMzEgMjMuNDUzN0wxMi4xMDI2IDIzLjQ0NDdDMTIuMDU0OCAyMi42MDAyIDEyLjA1NDcgMjIuMzM4NSAxMi4wNTQ3IDIwLjEyNTVDMTIuMDU0NyAxNy45MTI0IDEyLjA1NDggMTcuNjUwOCAxMi4xMDI2IDE2LjgwNjJMMTIuMTAzMSAxNi43OTczTDEyLjEwMzMgMTYuNzg4M0MxMi4xMTYxIDE2LjE3MDIgMTIuMjM0NCAxNS41NTg4IDEyLjQ1MyAxNC45ODA0TDEyLjQ1MyAxNC45ODA0TDEyLjQ1NTEgMTQuOTc0OUMxMi42Mjc1IDE0LjUwMjEgMTIuOTA1MSAxNC4wNzQ3IDEzLjI2NzEgMTMuNzI1MUwxMy4yNzI2IDEzLjcxOThMMTMuMjc3OSAxMy43MTQzQzEzLjYyOTcgMTMuMzUyOSAxNC4wNTc4IDEzLjA3NDggMTQuNTMwOSAxMi45MDAyTDE0LjUzMDkgMTIuOTAwMkwxNC41MzQ2IDEyLjg5ODhDMTUuMTEzIDEyLjY4MDIgMTUuNzI0NCAxMi41NjE5IDE2LjM0MjUgMTIuNTQ5MUwxNi4zNTE1IDEyLjU0ODlMMTYuMzYwNCAxMi41NDg0QzE3LjIwNSAxMi41MDA2IDE3LjQ2NjYgMTIuNTAwNSAxOS42Nzk3IDEyLjUwMDVDMjEuODkyNyAxMi41MDA1IDIyLjE1NDQgMTIuNTAwNiAyMi45OTg5IDEyLjU0ODRMMjMuMDA3OSAxMi41NDg5TDIzLjAxNjggMTIuNTQ5MUMyMy42MzUgMTIuNTYxOSAyNC4yNDY0IDEyLjY4MDIgMjQuODI0OCAxMi44OTg4TDI0LjgyNDggMTIuODk4OEwyNC44MzAzIDEyLjkwMDlDMjUuMzAzMSAxMy4wNzMzIDI1LjczMDQgMTMuMzUwOSAyNi4wODAxIDEzLjcxMjlMMjYuMDggMTMuNzEzTDI2LjA4OTkgMTMuNzIyOEMyNi40NTE5IDE0LjA3NzEgMjYuNzMyOSAxNC41MDU1IDI2LjkxMzggMTQuOTc4NkMyNy4xMjYgMTUuNTU5NSAyNy4yNDE2IDE2LjE3MTMgMjcuMjU2MSAxNi43ODk3Wk0yNi40ODY2IDI1LjA1OUwyNi40ODY5IDI1LjA1ODJDMjYuNjgyIDI0LjUyMzcgMjYuNzg1NiAyMy45NjAxIDI2Ljc5MzMgMjMuMzkxMUMyNi44MzQyIDIyLjU3MjQgMjYuODQyMiAyMi4yNTU2IDI2Ljg0MjIgMjAuMTI1NUMyNi44NDIyIDE3Ljk5NyAyNi44MzQyIDE3LjY3OTEgMjYuNzkzNCAxNi44NjE3QzI2Ljc4OTYgMTYuMjgxMiAyNi42ODU5IDE1LjcwNTYgMjYuNDg2OSAxNS4xNjAzTDI2LjQ4NDQgMTUuMTUzNEwyNi40ODE3IDE1LjE0NjdDMjYuMzIxOCAxNC43NDUzIDI2LjA3NjggMTQuMzgzNSAyNS43NjM0IDE0LjA4NjFDMjUuNDQ1OCAxMy43NDQzIDI1LjA1MjUgMTMuNDgxNiAyNC42MTQ5IDEzLjMxOTJMMjQuNjEyNSAxMy4zMTgzQzI0LjA3ODcgMTMuMTIzNCAyMy41MTYgMTMuMDE5OCAyMi45NDc4IDEzLjAxMTlDMjIuMTI5MSAxMi45NjMgMjEuODA0OSAxMi45NjMgMTkuNzAxOCAxMi45NjNIMTkuNjc5N0MxOC42MDY5IDEyLjk2MyAxNy45OTI5IDEyLjk3NTIgMTcuNTQ0MyAxMi45ODc2QzE3LjQzNiAxMi45OTA1IDE3LjMzODMgMTIuOTkzNSAxNy4yNDY5IDEyLjk5NjJDMTYuOTU3OCAxMy4wMDQ5IDE2LjczMTUgMTMuMDExNyAxNi40Mjk3IDEzLjAxMTdMMTYuNDI1OCAxMy4wMTE4QzE1Ljg0MjcgMTMuMDE2MyAxNS4yNjQ3IDEzLjExOTggMTQuNzE2MiAxMy4zMTc3TDE0LjcwMTEgMTMuMzIzMUwxNC42ODY0IDEzLjMyOTVDMTQuMjg3MyAxMy41MDMyIDEzLjkzIDEzLjc2MDMgMTMuNjM4NiAxNC4wODMzQzEzLjMxMzMgMTQuMzc1IDEzLjA1NzEgMTQuNzM1OCAxMi44ODg4IDE1LjEzOTNMMTIuODg1MiAxNS4xNDhMMTIuODgxOSAxNS4xNTY4QzEyLjY3ODUgMTUuNzAxNCAxMi41NzE3IDE2LjI3NzIgMTIuNTY2MSAxNi44NTg1QzEyLjUxNzIgMTcuNjc2NCAxMi41MTcyIDE4LjAwMTIgMTIuNTE3MiAyMC4xMDMzVjIwLjEyNTVDMTIuNTE3MiAyMS4xOTgzIDEyLjUyOTQgMjEuODEyMiAxMi41NDE4IDIyLjI2MDlDMTIuNTQ0NyAyMi4zNjkyIDEyLjU0NzcgMjIuNDY2OSAxMi41NTA0IDIyLjU1ODNDMTIuNTU5MSAyMi44NDc0IDEyLjU2NTkgMjMuMDczNyAxMi41NjU5IDIzLjM3NTVWMjMuMzgzM0wxMi41NjYyIDIzLjM5MTJDMTIuNTg0NSAyMy45NzY0IDEyLjcwNTUgMjQuNTUzNyAxMi45MjM1IDI1LjA5N0MxMy4wNzQ0IDI1LjUxNjQgMTMuMzE4OSAyNS44OTYgMTMuNjM4MyAyNi4yMDY5QzEzLjkzNzcgMjYuNTE1NiAxNC4yOTcgMjYuNzYgMTQuNjk0MyAyNi45MjQ4TDE0LjcxIDI2LjkzMTNMMTQuNzI2IDI2LjkzNjdDMTUuMjgxNiAyNy4xMjQyIDE1Ljg2NTEgMjcuMjE1NyAxNi40NTE0IDI3LjIwN0MxNy4yNjQ4IDI3LjI1NTUgMTcuNTkzMyAyNy4yNTU1IDE5LjY5IDI3LjI1NTVIMTkuNzEyMkMyMS44NDIzIDI3LjI1NTUgMjIuMTU5MSAyNy4yNDc1IDIyLjk3NzggMjcuMjA2NkMyMy41NDY4IDI3LjE5ODkgMjQuMTEwNCAyNy4wOTUzIDI0LjY0NDkgMjYuOTAwMkwyNC42NDUgMjYuOTAwMkwyNC42NTAxIDI2Ljg5ODJDMjUuMDY3NyAyNi43NDA1IDI1LjQ0NjMgMjYuNDk0MyAyNS43NTk3IDI2LjE3NjRDMjYuMDgzMSAyNS44NjM0IDI2LjMzMTUgMjUuNDgxNSAyNi40ODY2IDI1LjA1OVpNMTcuODk4NyAyMi43OTA5TDE3Ljg5ODggMjIuNzkwOUMxOC40MjU5IDIzLjE0MzEgMTkuMDQ1NyAyMy4zMzExIDE5LjY3OTcgMjMuMzMxMUMyMC4xMDA3IDIzLjMzMTEgMjAuNTE3NSAyMy4yNDgyIDIwLjkwNjQgMjMuMDg3MUMyMS4yOTU0IDIyLjkyNiAyMS42NDg4IDIyLjY4OTkgMjEuOTQ2NCAyMi4zOTIyQzIyLjI0NDEgMjIuMDk0NiAyMi40ODAyIDIxLjc0MTIgMjIuNjQxMyAyMS4zNTIyQzIyLjgwMjQgMjAuOTYzMyAyMi44ODUzIDIwLjU0NjUgMjIuODg1MyAyMC4xMjU1QzIyLjg4NTMgMTkuNDkxNSAyMi42OTczIDE4Ljg3MTcgMjIuMzQ1MSAxOC4zNDQ2TDIyLjM0NTEgMTguMzQ0NUMyMS45OTI4IDE3LjgxNzQgMjEuNDkyMiAxNy40MDY1IDIwLjkwNjQgMTcuMTYzOUMyMC4zMjA3IDE2LjkyMTMgMTkuNjc2MSAxNi44NTc4IDE5LjA1NDMgMTYuOTgxNUMxOC40MzI1IDE3LjEwNTIgMTcuODYxMyAxNy40MTA1IDE3LjQxMyAxNy44NTg4QzE2Ljk2NDcgMTguMzA3MSAxNi42NTk0IDE4Ljg3ODMgMTYuNTM1NyAxOS41MDAxQzE2LjQxMiAyMC4xMjE5IDE2LjQ3NTQgMjAuNzY2NSAxNi43MTgxIDIxLjM1MjJDMTYuOTYwNyAyMS45MzggMTcuMzcxNiAyMi40Mzg2IDE3Ljg5ODcgMjIuNzkwOVoiIHN0cm9rZT0id2hpdGUiLz4KPC9zdmc+Cg==" alt="Instagram"></a>
+                    <a><img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTIwIDI0LjQ0NDRDMjAgMjEuNzc3OCAxOC4yMjIyIDIwIDE1LjU1NTYgMjAiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8cGF0aCBkPSJNMjQuNDQ0MyAyNC40NDQ1QzI0LjQ0NDMgMTkuMTExMiAyMC44ODg4IDE1LjU1NTcgMTUuNTU1NCAxNS41NTU3IiBzdHJva2U9IndoaXRlIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPHBhdGggZD0iTTE1LjU1NTcgMjQuNDU0M0wxNS41NjU3IDI0LjQ0MzIiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8cGF0aCBkPSJNMjggMTdWMjNDMjggMjUuNzYxNCAyNS43NjE0IDI4IDIzIDI4SDE3QzE0LjIzODYgMjggMTIgMjUuNzYxNCAxMiAyM1YxN0MxMiAxNC4yMzg2IDE0LjIzODYgMTIgMTcgMTJIMjNDMjUuNzYxNCAxMiAyOCAxNC4yMzg2IDI4IDE3WiIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+Cjwvc3ZnPgo=" alt="RSS"></a>
+                </div>
+                <p><a href="mailto:info@example.com">info@example.com</a></p>
+                <button onclick="location.href='advertise.html'">Advertise with us</button>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <img src="https://cdn.prod.website-files.com/660fedec1ab54b2595c51e30/667bf2ff264fc076bd9227c5_journax.svg" alt="">
+            <p style="text-align-last: right;">&copy; 2024 Journax. Designed by Nixar. Powered by Webflow.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
